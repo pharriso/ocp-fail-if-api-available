@@ -6,4 +6,6 @@
      validate_certs: false
    register: ocp_url
    failed_when: ocp_url.status == 200
+   delegate_to: localhost
+   run_once: true
 
